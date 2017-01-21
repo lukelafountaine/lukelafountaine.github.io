@@ -2,15 +2,15 @@
 layout: post
 title:  "Bali Part Two"
 date:   2015-01-10 18:30:10 -0500
-categories: travel bali indonesia photography
+categories: travel photography
 ---
 
-![](/assets/bwfish.jpeg)
+![](/assets/bali2/bwfish.jpeg)
 
-![](/assets/connorpolaroid.jpeg)
+![](/assets/bali2/connorpolaroid.jpeg)
 
-![](/assets/monkeybali.jpeg)
+![](/assets/bali2/monkeybali.jpeg)
 
-![](/assets/orangutan.jpeg)
+![](/assets/bali2/orangutan.jpeg)
 
-![](/assets/parrotbali.jpeg)
+![](/assets/bali2/parrotbali.jpeg)

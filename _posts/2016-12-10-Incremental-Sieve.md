@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Incremental Sieve of Eratosthenes"
+title:  "Generating Infinitely Many Primes"
 date:   2016-12-10 18:30:10 -0500
-categories: programming math prime
+categories: programming math
 ---
 
 I recently started working through some [Project Euler](https://projecteuler.net/) problems, and one that was particularly interesting to me so far was #7:
@@ -21,51 +21,35 @@ Here is my Golang implementation:
 {% highlight golang %}
 
 func NextPrime() <-chan int {
-
     out := make(chan int, 1)
 
     go func() {
-
         out <- 2
         composites := make(map[int][]int)
         num := 3
 
         for {
-
             if _, ok := composites[num]; !ok {
-
                 out <- num
                 composites[num * num] = []int{num}
-
             } else {
-
                 for _, prime := range composites[num] {
-
                     next := num + prime
-
                     for next % 2 == 0 {
                         next += prime
                     }
-
                     if _, ok := composites[next]; ok {
-
                         composites[next] = append(composites[next], prime)
-
                     } else {
-
                         composites[next] = []int{prime}
-
                     }
-
                 }
                 delete(composites, num)
             }
-
             num += 2
         }
     }()
 
     return out
 }
-
 {% endhighlight %}
