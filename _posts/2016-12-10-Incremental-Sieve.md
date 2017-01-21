@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Generating Infinitely Many Primes"
+title:  "Generating Infinitely Many Prime Numbers"
 date:   2016-12-10 18:30:10 -0500
 categories: programming math
 ---
