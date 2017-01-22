@@ -9,5 +9,5 @@ permalink: /about/
 My name is Luke LaFountaine, and I am a software engineer from Southern California.  
 I like traveling, camping, surfing, software, and learning new things.
 
-Please feel free to check out my [resume](/assets/resume2016.pdf).  
+Please feel free to check out my [resume](/assets/about/resume2016.pdf).  
 More contact information can be found below.
