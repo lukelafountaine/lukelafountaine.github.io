@@ -1,0 +1,21 @@
+baseURL: https://www.lukelafountaine.com/
+languageCode: en-us
+title: Luke LaFountaine
+
+taxonomies: # No need to generate "tag" pages.
+
+markup:
+   highlight:
+      noClasses: false
+      style: none
+
+menu:
+   main:
+      -
+         name: About
+         url: /about
+         weight: 1
+      -
+         name: Projects
+         url: /projects
+         weight: 3

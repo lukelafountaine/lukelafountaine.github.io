@@ -1,0 +1,15 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+{{ range .Pages }}
+<section class="post-item">
+   <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+   {{ if not .Date.IsZero }}
+   <p><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></p>
+   {{ end }}
+   {{ with .Description }}
+   <p>{{ . }}</p>
+   {{ end }}
+</section>
+{{ end }}
+{{ end }}

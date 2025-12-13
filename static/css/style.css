@@ -1,0 +1,145 @@
+/* Reset and base styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --accent-color: #c85a17;
+}
+
+/* Typography inspired by Tufte */
+body {
+   font-family: "Palatino Linotype", Palatino, Georgia, serif;
+   font-size: 18px;
+   line-height: 1.6;
+   color: #111;
+   background-color: #fffff8;
+   padding: 2rem 1rem;
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+h1, h2, h3 {
+   font-weight: normal;
+   margin-top: 1.5rem;
+   margin-bottom: 0.5rem;
+   line-height: 1.2;
+}
+
+h1 {
+   font-size: 2.5rem;
+   margin-top: 0;
+}
+
+h2 {
+   font-size: 1.8rem;
+}
+
+h3 {
+   font-size: 1.3rem;
+}
+
+p {
+   margin-bottom: 1rem;
+}
+
+a {
+   color: #111;
+   text-decoration: none;
+   border-bottom: 1px solid #777;
+}
+
+a:hover {
+   border-bottom: 1px solid var(--accent-color);
+}
+
+time {
+   font-style: italic;
+   color: #666;
+   font-size: 0.9rem;
+}
+
+/* Navigation */
+header {
+   margin-bottom: 3rem;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 1rem;
+   border-bottom: 2px solid var(--accent-color);
+}
+
+nav a {
+   border-bottom: 1px solid transparent;
+   padding-bottom: 2px;
+}
+
+nav a:hover {
+   border-bottom: 1px solid var(--accent-color);
+}
+
+nav div:first-child a {
+   font-weight: bold;
+}
+
+nav div:last-child a {
+   margin-left: 1.5rem;
+}
+
+nav div:last-child a:first-child {
+   margin-left: 0;
+}
+
+/* Post list */
+section.post-item {
+   margin-bottom: 2rem;
+}
+
+section.post-item h2 {
+   margin-top: 0;
+   margin-bottom: 0.25rem;
+}
+
+section.post-item h2 a {
+   border-bottom: none;
+}
+
+section.post-item h2 a:hover {
+   border-bottom: 1px solid var(--accent-color);
+}
+
+/* Single post */
+.subtitle {
+   font-style: italic;
+   color: #666;
+   margin-bottom: 2rem;
+}
+
+/* Code */
+code {
+   font-family: Consolas, "Liberation Mono", Courier, monospace;
+   font-size: 0.9rem;
+}
+
+pre {
+   overflow-x: auto;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   padding-left: 1rem;
+}
+
+pre code {
+   display: block;
+   line-height: 1.5;
+   font-size: 0.85rem;
+}
+
+/* Images */
+img {
+   max-width: 100%;
+   height: auto;
+}

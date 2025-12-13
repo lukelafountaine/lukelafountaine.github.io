@@ -1,0 +1,16 @@
+{
+   "name": "blog",
+   "version": "1.0.0",
+   "description": "Personal blog built with Hugo and the Archie theme",
+   "scripts": {
+      "dev": "hugo server -D",
+      "build": "hugo --minify",
+      "clean": "rm -rf public resources"
+   },
+   "devDependencies": {
+      "hugo-extended": "0.140.2"
+   },
+   "engines": {
+      "node": ">=18.0.0"
+   }
+}
